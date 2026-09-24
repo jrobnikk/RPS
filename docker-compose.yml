@@ -1,0 +1,30 @@
+services:
+  baza:
+    image: mariadb:11
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_GESLO}
+      MARIADB_DATABASE: sola_is
+      MARIADB_USER: ${DB_UPORABNIK}
+      MARIADB_PASSWORD: ${DB_GESLO}
+    volumes:
+      - baza_podatki:/var/lib/mysql
+      - ./baza:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      retries: 20
+
+  aplikacija:
+    build: ./aplikacija
+    depends_on:
+      baza:
+        condition: service_healthy
+    ports:
+      - "8080:3000"
+    env_file: .env
+    volumes:
+      - datoteke:/data/uploads
+
+volumes:
+  baza_podatki:
+  datoteke:
