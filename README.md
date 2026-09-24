@@ -5,9 +5,9 @@ Projekt pri predmetu RPS – Računalniški produkti in storitve.
 ## Skupina
 | Član | Vloga |
 |------|-------|
-| Jernej | Vzdrževalec IS |
+| Jernej Robnik | Vzdrževalec IS |
 | Vid Strmčnik | Razvijalec |
-| Lan | Razvijalec |
+| Lan Plazar | Razvijalec |
 
 Mentor: _ime mentorja_
 
@@ -44,8 +44,8 @@ docker compose up -d
 ## Prijava v testno okolje (po prvem zagonu se samodejno vnesejo testni podatki)
 | Vloga | E-pošta | Geslo |
 |-------|---------|-------|
-| Administrator | admin@sola.si | admin123 |
-| Učitelj | ucitelj1@sola.si … ucitelj20@sola.si | geslo123 |
-| Učenec | ucenec1@sola.si … ucenec100@sola.si | geslo123 |
+| Administrator | vid.strmcnik.20654@dijak.sc-celje.si | admin123 |
+| Učitelj | ucitelj1@sc-celje.si | geslo123 |
+| Učenec | dijak@dijak.sc-celje.si | geslo123 |
 
 Aplikacija: http://localhost:8080. Pred javno objavo zamenjajte vsa testna gesla.
