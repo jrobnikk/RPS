@@ -9,7 +9,7 @@ Projekt pri predmetu RPS – Računalniški produkti in storitve.
 | Vid Strmčnik | Razvijalec |
 | Lan Plazar | Razvijalec |
 
-Mentor: _ime mentorja_
+Mentor: Andraž Pušnik
 
 ## Opis
 Spletna aplikacija s tremi pogledi (administrator, učitelj, učenec). Teče v Docker vsebnikih na Linux strežniku in je objavljena na javni domeni prek HTTPS.
@@ -45,7 +45,7 @@ docker compose up -d
 | Vloga | E-pošta | Geslo |
 |-------|---------|-------|
 | Administrator | vid.strmcnik.20654@dijak.sc-celje.si | admin123 |
-| Učitelj | ucitelj1@sc-celje.si | geslo123 |
+| Učitelj | andraz.pusnik@sc-celje.si | geslo123 |
 | Učenec | dijak@dijak.sc-celje.si | geslo123 |
 
 Aplikacija: http://localhost:8080. Pred javno objavo zamenjajte vsa testna gesla.
